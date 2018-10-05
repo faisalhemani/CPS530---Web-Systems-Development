@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function validateForm() {
+        var x = document.forms["myForm"]["name"].value;
+	var y = document.forms["myForm"]["address"].value;
+	var z = document.forms["myForm"]["number"].value;
+	var num = /^\(?([0-9]{3})\)?[-]([0-9]{3})[-]?([0-9]{4})$/;
+	var adr = /^[A-Za-z0-9. ]+$/;
+        var nm =  /^[A-Za-z ]+$/;
+    if (x == null || x == "" || !x.match(nm)) {
+        alert("Name is required");
+        return false;
+    }
+	if (y == null || y == "" || !y.match(adr)) {
+        alert("Address is required");
+        return false;
+    }
+	if (!z.match(num) || z == null || z == "") {
+        alert("Number is required");
+        return false;
+    }
+}
+</script>
+</head>
+<body>
+
+<form name="myForm" action="form.rb" onsubmit="return validateForm()" method="post">
+Name: <input type="text" name="name" placeholder="John Doe">
+Address: <input type="text" name="address" placeholder="123 Example St.">
+Phone Number: <input type="text" name="number" placeholder="416-555-5555">
+<input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
+
