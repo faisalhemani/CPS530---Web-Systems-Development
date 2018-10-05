@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style> 
+		body{
+                        background:url('http://wlpapers.com/images/blurry-background-1.jpg') no-repeat center center fixed;
+                        -webkit-background-size: cover;
+                        -moz-background-size:cover;
+                        -o-background-size:cover;
+                        background-size:cover;
+                }
+		#pic{
+                        height:250px;
+                        width:250px;
+                        margin: auto;
+                        position: absolute;
+                        top: 0; left: 200px; bottom: 0; right: 0;
+                }
+                #info {
+                        height:50px;
+                        width:250px;
+			font-family: 'Lato', sans-serif;
+                        font-weight: 200;
+                        color: #000000;
+                        padding-top: 80px;
+                        padding-left: 30px;
+                }
+                #other{
+                        padding-left:30px;
+                        font-family: 'Lato', sans-serif;
+                        font-weight: 200;
+                        color: #000000;
+                }
+	</style>
+</head>
+<body>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <div id="pic"></div>
+        <div id="info"></div>
+        <div id="other"></div>
+
+
+	<script>
+		var xhttp = new XMLHttpRequest();
+		xhttp.onreadystatechange = function() {
+    		if (this.readyState == 4 && this.status == 200) {
+        		myFunction(this);
+    		}
+		};
+		xhttp.open("GET", "lab7.xml", true);
+		xhttp.send();
+
+		function myFunction(xml) {
+    		var xmlDoc = xml.responseXML;
+    		document.getElementById("pic").innerHTML =
+    		"<img src="+xmlDoc.getElementsByTagName("cover")[0].childNodes[0].nodeValue + " height=100% width=100%;></img>";
+		document.getElementById("info").innerHTML =
+    		xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue + "<br> by " +
+    		xmlDoc.getElementsByTagName("artists")[0].childNodes[0].nodeValue + "<br>";
+		document.getElementById("other").innerHTML = "Current Rank: " +
+    		xmlDoc.getElementsByTagName("current")[0].childNodes[0].nodeValue + 
+		"<br>Unique ID: " + xmlDoc.getElementsByTagName("uniqueid")[0].childNodes[0].nodeValue + 
+		"<br>Start Time: " + xmlDoc.getElementsByTagName("starttime")[0].childNodes[0].nodeValue +
+		"<br>Play Duration: " + xmlDoc.getElementsByTagName("playduration")[0].childNodes[0].nodeValue +
+		"<br>Call Me Back: " + xmlDoc.getElementsByTagName("callmeback")[0].childNodes[0].nodeValue;
+}
+</script>
+
+</body>
+</html>
+
+

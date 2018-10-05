@@ -1,0 +1,130 @@
+body{
+	background:url('background.jpg') no-repeat center center fixed;
+	table: no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;
+
+}
+.sidebar{
+	background:#000000;
+	width:350px;
+	height:100%;
+	display:block;
+	position:fixed;
+	padding-left: 
+	filter:alpha(opacity=60);
+	-moz-opacity:.60;
+	opacity:.60;
+	z-index:15;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-delay: 0.5s;
+}
+
+h2{
+	padding-top:200px;
+	padding-left:50px;
+	font-weight:100;
+	font-size:42px;
+	font-family: "Helvetica Neue", "HelveticaNeue", 'Open Sans Condensed', Arial, sans-serif;
+    color: #fff;
+	filter:alpha(opacity=100);
+	-moz-opacity:100%;
+	opacity:100%;
+}
+
+h3{
+	padding-top:200px;
+	padding-left:50px;
+	font-weight:100;
+	font-size:42px;
+	font-family: "Helvetica Neue", "HelveticaNeue", 'Open Sans Condensed', Arial, sans-serif;
+    color: #fff;
+	filter:alpha(opacity=100);
+	-moz-opacity:100%;
+	opacity:100%;
+}
+
+#profile{
+	padding-left:125px;
+	filter:alpha(opacity=100);
+	-moz-opacity:100%;
+	opacity:100%;
+}
+
+
+ul{
+	margin:0px;
+	padding-top:10px;
+	font-family: "Helvetica Neue", "HelveticaNeue", 'Open Sans Condensed', Arial, sans-serif;
+	font-size:22px;
+	text-decoration: none;
+	text-align: left;
+}
+
+ul li #report {
+	list-style:none;
+	padding-left: 55px;
+}
+ul li #validation {
+	list-style: none;
+	padding-left: 90px;
+}
+ul li a{
+	text-decoration:none;
+	color: #fff;
+}
+
+.ptable {
+	padding-top: 20px;
+	padding-left:375px;
+	width:650px;
+	position: fixed;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-delay: 0.5s;
+}
+
+tr [colspan="4"] {
+    text-align: center;
+	padding-bottom:20px;
+	font-weight:100;
+	font-size:50px;
+	font-family: "Helvetica Neue", "HelveticaNeue", 'Open Sans Condensed', Arial, sans-serif;
+    color: #fff;
+}
+
+footer{
+	text-align: center;
+	font-weight: 100;
+	font-family: "Helvetica Neue", "HelveticaNeue", 'Open Sans Condensed', Arial, sans-serif;
+    color: #fff;
+}
+
+.paragraph{
+	background:#000000;
+	width:850px;
+	height:500px;
+	display:block;
+	position:fixed;
+	top: 30px;
+	left: 375px;
+	filter:alpha(opacity=60);
+	-moz-opacity:.60;
+	opacity:.60;
+	z-index:15;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-delay: 0.5s;
+}
+
+.paragraph h3{
+	padding-top: 20px;
+	padding-left: 5px;
+	font-weight:100;
+	font-size:22px;
+	font-family: "Helvetica Neue", "HelveticaNeue", 'Open Sans Condensed', Arial, sans-serif;
+    	color: #fff;
+	filter:alpha(opacity=100);
+	-moz-opacity:100%;
+	opacity:100%;
+}

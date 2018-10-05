@@ -1,0 +1,1 @@
+The files for this lab can be found in the cgi-bin folder one step up in the filetree

@@ -1,0 +1,33 @@
+body{
+	background:url('https://drive.google.com/file/d/0B8ne4NjMCNIVM0FQaHhENmN2UnZ5bHhzcXRvb295bGVZbzJJ/view?usp=sharing') no-repeat center center fixed;
+	table: no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;
+}
+
+h2{
+	font-family: 'Taviraj', serif, center, center, fixed;
+	font-size: 50px;
+	padding-top: 250px;
+	padding-left: 550px;
+	color: #ffffff;
+}
+
+form{
+	font-family: 'Taviraj', serif, center, center, fixed;
+	font-size: 30px;
+	padding-top: 100px;
+	padding-left: 550px;
+	color: #ffffff;
+}
+input[type="text"] {
+    color:#000000;
+}
+
+select {
+	font-family: 'Taviraj', serif, center, center, fixed;
+	color: #000000;
+}
+Attachments area
